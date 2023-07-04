@@ -7,10 +7,10 @@
 
 // write a new function game() and use the previous function inside this to play 5 game
 // track the score and report the winner at the end of the game
-
+const choices = ['rock', 'paper', 'scissors'];
 
 function getComputerChoice () {
-    return 'Paper';
+    return choices[Math.floor(Math.random()*choices.length)];
 }
 console.log(getComputerChoice())
 
@@ -24,26 +24,28 @@ console.log(getComputerChoice())
 
 function gameRound(playerSelect, computerSelect) {
 
-    if (playerSelect.toLowerCase() == 'rock' && computerSelect == 'Paper') {
+    if (playerSelect.toLowerCase() == 'rock' && computerSelect == 'paper') {
         return 'You Lose!';
     } 
-    else if (playerSelect.toLowerCase() == 'paper' && computerSelect == 'Scissors') {
+    else if (playerSelect.toLowerCase() == 'paper' && computerSelect == 'scissors') {
         return 'You Lose!';
     } 
-    else if (playerSelect.toLowerCase() == 'scissors' && computerSelect == 'Rock') {
+    else if (playerSelect.toLowerCase() == 'scissors' && computerSelect == 'rock') {
         return 'You Lose!';
-    } else if (playerSelect.toLowerCase() == 'paper' && computerSelect == 'Rock') {
+    } else if (playerSelect.toLowerCase() == 'paper' && computerSelect == 'rock') {
         return 'You Win!';
-    } else if (playerSelect.toLowerCase() == 'scissors' && computerSelect == 'Paper') {
+    } else if (playerSelect.toLowerCase() == 'scissors' && computerSelect == 'paper') {
         return 'You Win!';
-    } else if (playerSelect.toLowerCase() == 'rock' && computerSelect == 'Scissors') {
+    } else if (playerSelect.toLowerCase() == 'rock' && computerSelect == 'scissors') {
         return 'You Win!';
-    } else if (playerSelect.toLowerCase() == computerSelect.toLowerCase()) {
+    } else if (playerSelect.toLowerCase() == computerSelect) {
         return 'It\'s a Tie!';
-    } else if (playerSelect.toLowerCase() == computerSelect.toLowerCase()) {
+    } else if (playerSelect.toLowerCase() == computerSelect) {
         return 'It\'s a Tie!';
-    } else if (playerSelect.toLowerCase() == computerSelect.toLowerCase()) {
+    } else if (playerSelect.toLowerCase() == computerSelect) {
         return 'It\'s a Tie!';
+    } else {
+        return 'Invalid Input';
     }
 }
 
