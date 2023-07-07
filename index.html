@@ -2,16 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
-
-
-
-    
-    <script src="script.js"></script>
+    <header class="victor-container">
+        <h1 id="winner" class="hidden"></h1>
+    </header>
+    <div class="container">
+        <h1>Rock Paper Scissors!</h1>
+        <div class="score-container header">
+            <div class="score-area">
+                <p class="score-text">Your Score : 
+                    <div id="player-score">
+                        <div class="circle-player"></div>
+                        <div class="circle-player"></div>
+                        <div class="circle-player"></div>
+                        <div class="circle-player"></div>
+                        <div class="circle-player"></div>
+                    </div></p>
+            </div>
+            <div class="score-area">
+                <p class="score-text">Computer's Score : 
+                <div id="computer-score">
+                    <div class="circle-comp"></div>
+                    <div class="circle-comp"></div>
+                    <div class="circle-comp"></div>
+                    <div class="circle-comp"></div>
+                    <div class="circle-comp"></div>
+                </div></p>
+            </div>
+            
+        </div>
+        <div class="picks-container header">
+            <div class="picks-area">
+                <p class="picks-text">Your Pick : </p>
+                <div><img id="player-pick" src="" alt="">
+                </div>
+            </div>
+            <div class="picks-area">
+                <p class="picks-text">Computers Pick : </p>
+                <div><img id="computer-pick" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="img-container">
+            <img id="btn-rock" class="btn-pick" src="Images/rock.png">
+            <img id="btn-paper" class="btn-pick" src="Images/paper.png">
+            <img id="btn-scissors" class="btn-pick" src="Images/scissors.png">
+        </div>
+        <p id="action-text">Pick your Choice!</p>
+    </div>
+    <script src="app.js" charset="UTF-8"></script>
 </body>
 </html>
+
