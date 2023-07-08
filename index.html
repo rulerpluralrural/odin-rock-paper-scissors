@@ -8,11 +8,9 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <header class="victor-container">
-        <h1 id="winner" class="hidden"></h1>
-    </header>
     <div class="container">
-        <h1>Rock Paper Scissors!</h1>
+        <h1 id="winner" class="hidden"></h1>
+        <h1 class="title-text">Rock Paper Scissors!</h1>
         <div class="score-container header">
             <div class="score-area">
                 <p class="score-text">Your Score : 
@@ -49,11 +47,12 @@
             </div>
         </div>
         <div class="img-container">
-            <img id="btn-rock" class="btn-pick" src="Images/rock.png">
-            <img id="btn-paper" class="btn-pick" src="Images/paper.png">
-            <img id="btn-scissors" class="btn-pick" src="Images/scissors.png">
+            <img id="btn-rock" data-type="rock" class="btn-pick" src="Images/rock.png">
+            <img id="btn-paper" data-type="paper" class="btn-pick" src="Images/paper.png">
+            <img id="btn-scissors" data-type="scissors" class="btn-pick" src="Images/scissors.png">
         </div>
         <p id="action-text">Pick your Choice!</p>
+        <button class="refresh-btn hidden">Restart Game!</button>
     </div>
     <script src="app.js" charset="UTF-8"></script>
 </body>
